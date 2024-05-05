@@ -25,7 +25,7 @@ function calculateBunkClasses() {
         if (updatedAttendance <= 76) {
             break;
         }
+        document.getElementById("bunkP").textContent = `Total bunk classes possible: ${bunkClasses}`;
         bunkClasses++;
     }
-    document.getElementById("bunkP").textContent = `Total bunk classes possible: ${bunkClasses}`;
 }
