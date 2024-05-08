@@ -22,7 +22,7 @@ function calculateBunkClasses() {
     let bunkClasses = 0;
     while (bunkClasses<attendedClasses) {
         const updatedAttendance = ((attendedClasses) * 100) / (deliveredClasses + bunkClasses);
-        if (updatedAttendance <= 76) {
+        if (updatedAttendance <= 75) {
             break;
         }
         document.getElementById("bunkP").textContent = `Total bunk classes possible: ${bunkClasses}`;
